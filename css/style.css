@@ -1,0 +1,447 @@
+@charset "utf-8";
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #707070;
+  font-size: 14px;
+  line-height: 2;
+}
+
+p,h1,h2,h3,h4,h5,h6 {
+  margin-top: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+a {
+  color: #707070;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  filter: drop-shadow(0px 3px 6px rgba(0,0,0,0.16));
+}
+
+.logo {
+  padding: 24px;
+}
+
+
+.logo img {
+  width: 233px;
+  height: auto;
+}
+
+@media(max-width:670px){
+  .logo img {
+    width: 137px;
+    height: auto;
+  }
+}
+
+
+#wrap {
+  clear: both;
+}
+
+.content {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media(min-width: 1000px){
+  .mainvidual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+  }
+}
+
+
+.mainvidual-text {
+  margin-right: 24px;
+  text-align: center;
+}
+
+.mainvidual-text p {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.mainvidual-image img {
+  width: 500px;
+  height: auto;
+  text-align: center;
+}
+
+@media(max-width: 670px){
+  .mainvidual-text{
+    width: 327px;
+    margin: 0 auto;
+  }
+  
+  .mainvidual-text h1 {
+    font-size: 1.4rem;
+    padding-top: 60px;
+  }
+  
+  .mainvidual-text p {
+    font-size: 0.9rem;
+  }
+  
+  .mainvidual-image {
+    width: 327px;
+    margin: 0 auto;
+  }
+  
+  .mainvidual-image img{
+    width: 327px;
+    height: auto;
+  }
+}
+
+.area {
+  width: 100%;
+  height: 160px;
+  background-color: #7B7B7B;
+}
+
+.area h2 {
+  color: #ffffff;
+  width: 648px;
+  margin: 0 auto;
+  padding-top: 32px;
+}
+
+#form{
+  width: 648px;
+  margin: 0 auto;
+}
+
+#sbox{	
+  outline: 0;	
+  height: 54px;
+  width: 424px;
+  background:#ffffff;
+  border: none;
+  color: #D0D0D0;
+  font-size: 0.8rem;
+  padding-left: 18px;
+}
+
+#sbtn{
+  width: 200px;
+  height: 54px;
+  background: #FAD74D;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  margin-top: 1px;
+}
+
+#sbtn:hover{
+  background:#F0EFE7;
+  color:#FAD74D;
+}
+
+@media(max-width:670px){
+  .area {
+    height: 120px;
+  }
+  
+  .area h2 {
+    padding-top: 12px;
+    font-size: 1.2rem;
+    width: 327px;
+    margin: 0 auto;
+  }
+  
+  #form{
+    width: 327px;
+    margin: 0 auto;
+  }
+
+  #sbox{	
+    outline: 0;	
+    height: 42px;
+    width: 213px;
+    background:#ffffff;
+    border: none;
+    color: #D0D0D0;
+    font-size: 0.8rem;
+    padding-left: 18px;
+  }
+
+  #sbtn{
+    width: 101px;
+    height: 42px;
+    background: #FAD74D;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    margin-top: 1px;
+  }
+}
+
+.category {
+  width: 1096px;
+  margin: 0 auto;
+}
+
+.category h3 {
+  margin-top: 36px;
+}
+
+.category-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category h2 {
+  width: 648px;
+  margin: 0 auto;
+  padding: 60px 0 18px;
+}
+
+.card-tax {
+  width: 200px;
+  height: 200px;
+  margin-right: 24px;
+  background-color: #F9D74D;
+  text-align: center;
+}
+
+.card-insurance {
+  width: 200px;
+  height: 200px;
+  margin-right: 24px;
+  background-color: #B7DE43;
+  text-align: center;
+}
+
+.card-living {
+  width: 200px;
+  height: 200px;
+  background-color: #81BFC1;
+  text-align: center;
+}
+
+.card-image {
+  margin-top: 50px;
+}
+
+.card-title {
+  font-size: 1.4rem;
+  color: #ffffff;
+  margin-top: 18px;
+}
+
+.category-nameList {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: flex-start;
+}
+
+.category-nameList-item {
+  width: 200px;
+  height: 54px;
+  font-size: 1rem;
+  border: solid 1px #F9D74D;
+  text-align: center;
+  padding-top: 18px;
+  margin: 0 12px 12px 0;
+}
+
+.category-nameList-item:hover{
+  background:#FAD74D;
+}
+
+.category-nameList-item-2 {
+  width: 200px;
+  height: 54px;
+  font-size: 1rem;
+  border: solid 1px #B7DE43;
+  text-align: center;
+  padding-top: 18px;
+  margin: 0 12px 12px 0;
+}
+
+.category-nameList-item-2:hover{
+  background:#B7DE43;
+}
+
+.category-nameList-item-3 {
+  width: 200px;
+  height: 54px;
+  font-size: 1rem;
+  border: solid 1px #81BFC1;
+  text-align: center;
+  padding-top: 18px;
+  margin: 0 12px 80px 0;
+}
+
+.category-nameList-item-3:hover{
+  background:#81BFC1;;
+}
+
+@media(max-width: 670px){
+  .category {
+    width: 327px;
+  }
+  
+  .card-tax {
+    width: 101px;
+    height: 101px;
+    margin-right: 12px;
+  }
+  
+  .card-insurance {
+    width: 101px;
+    height: 101px;
+    margin-right: 12px;
+  }
+  
+  .card-living {
+    width: 101px;
+    height: 101px;
+  }
+  
+  .card-image {
+    margin-top: 24px;
+  }
+
+  .card-image a img{
+    height: 32px;
+  }
+  
+  .category-nameList-item {
+    width: 151px;
+    height: 42px;
+    font-size: 0.9rem;
+    border: solid 1px #F9D74D;
+    padding-top: 16px;
+    margin: 0 9px 12px 0;
+  }
+
+  .category-nameList-item-2 {
+    width: 151px;
+    height: 42px;
+    font-size: 0.9rem;
+    border: solid 1px #B7DE43;
+    padding-top: 16px;
+    margin: 0 9px 12px 0;
+  }
+
+  .category-nameList-item-3 {
+    width: 151px;
+    height: 42px;
+    font-size: 0.9rem;
+    border: solid 1px #81BFC1;
+    padding-top: 16px;
+    margin: 0 9px 12px 0;
+  }
+}
+
+.about {
+  background-color: #F0EFE7;
+}
+
+.about h2 {
+  width: 648px;
+  margin: 0 auto;
+  padding: 60px 0 18px;
+}
+
+.about-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 200px;
+  height: 200px;
+  margin-right: 24px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 1.2rem;
+  margin-top: 18px;
+}
+
+.history-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+}
+
+.history-list-item {
+  width: 200px;
+  height: 54px;
+  background-color: #ffffff;
+  font-size: 1rem;
+  text-align: center;
+  padding-top: 18px;
+  margin: 24px 24px 60px 0;
+}
+
+@media(max-width:670px) {
+  .about h2 {
+    width: 327px;
+    margin: 0 auto;
+  }
+  
+  .about-box {
+    width: 327px;
+    margin: 0 auto;
+  }
+  
+  .card {
+    width: 101px;
+    height: 101px;
+  }
+  
+  .history-list-item {
+    width: 150px;
+    height: 60px;
+    font-size: 0.9rem;
+  }
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #F0EFE7;
+}
+
+footer small {
+  font-size: 0.8rem;
+}
