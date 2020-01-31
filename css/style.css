@@ -9,7 +9,7 @@ body {
   line-height: 2;
 }
 
-p,h1,h2,h3,h4,h5,h6 {
+p,h1,h2,h3,h4,h5,h6,a {
   margin-top: 0;
   font-family: 'Noto Sans JP', sans-serif;
 }
@@ -45,13 +45,16 @@ header {
   padding: 24px;
 }
 
-
 .logo img {
   width: 233px;
   height: auto;
 }
 
 @media(max-width:670px){
+  header {
+    height: 60px;
+  }
+  
   .logo img {
     width: 137px;
     height: auto;
@@ -313,6 +316,15 @@ header {
     width: 327px;
   }
   
+  .category h2 {
+    width: 327px;
+  }
+  
+  .card-title {
+    font-size: 0.8rem;
+    margin-top: 12px;
+  }
+  
   .card-tax {
     width: 101px;
     height: 101px;
@@ -333,9 +345,9 @@ header {
   .card-image {
     margin-top: 24px;
   }
-
-  .card-image a img{
-    height: 32px;
+  
+  .card-title {
+    font-size:  0.8rem;
   }
   
   .category-nameList-item {
@@ -413,6 +425,10 @@ header {
 }
 
 @media(max-width:670px) {
+  .about {
+    margin-top: 48px;
+  }
+  
   .about h2 {
     width: 327px;
     margin: 0 auto;
@@ -426,12 +442,36 @@ header {
   .card {
     width: 101px;
     height: 101px;
+    margin-right: 12px;
+  }
+  
+  .about-title {
+    margin-top: 12px;
+  }
+  
+  .card-image {
+    width: auto;
+    height: 30%;
+  }
+  
+  .about-title {
+    font-size: 0.8rem;
+  }
+  
+  .history-list {
+    width: 327px;
+    margin: 0 auto;
   }
   
   .history-list-item {
-    width: 150px;
+    width: 120px;
     height: 60px;
+    margin-top: 18px;
     font-size: 0.9rem;
+  }
+  
+  .history-list-item:first-child{
+    margin-right: 12px;
   }
 }
 
